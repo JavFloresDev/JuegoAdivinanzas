@@ -12,7 +12,7 @@ Juego de Adivinanzas de palabras en Java que funciona por ventanas graficas. Par
 
 ## Requisitos
 
-- Java 11 o superior
+- Java 17 o superior
 
 ## Tecnologías utilizadas
 
@@ -27,15 +27,11 @@ git clone https://github.com/JavFloresDev/JuegoAdivinanzas
 ```
 2. Entrar a la carpeta del proyecto:
 ```bash
-cd JuegoAdivinanzas
-```
-3. Compila el programa:
-```bash
-javac --release 11 src/juego/NewJFrame.java
+cd JuegoAdivinanzas/dist
 ```
 4. Ejecuta el programa: 
 ```bash
-java -cp src/juego 
+java -jar Ahorcado.jar
 ```
 
 ## Ejemplo de uso
