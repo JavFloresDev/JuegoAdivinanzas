@@ -29,37 +29,40 @@ git clone https://github.com/JavFloresDev/JuegoAdivinanzas
 ```bash
 cd JuegoAdivinanzas/dist
 ```
-4. Ejecuta el programa: 
+3. Ejecuta el programa: 
 ```bash
 java -jar Ahorcado.jar
 ```
 
 ## Ejemplo de uso
 ```
-=== Calculadora Básica ===
-Operaciones disponibles: +  -  *  /
-Escribe 'salir' para terminar.
+Usuario_1: Ingresa la palabra en la casilla
+correspondiente y hace click en el botón
+"iniciar" de la derehca.
 
-Primer número: 25
-Segundo número: 5
-Operación (+, -, *, /): /
-Resultado: 5.0
+El programa devuelve la palabra en guiones.
 
-Primer número: 10
-Segundo número: 0
-Operación (+, -, *, /): /
-Error: No se puede dividir por cero.
+Usuario_2: Empieza ingresando letras en la casilla
+señalizada y busca con el botón si la letra existe
+en la palabra el acierto incrementa y se muestra en
+la palabra secreta la posicion de la letra.
 
-Primer número: 0 : 0
-¡Hasta luego!
+Si el usuario ingresa una letra equivocada, los
+fallos incrementan y el progreso crece, cuando el
+progreso y los fallos lleguen a 5 el jugador pierde
+y aparece la palabra que Usuario_1 ingreso,
+de lo contrario si adivina, Gana.
+
+El proceso Juego se repite haciendo click en inciar
+cuando haya ingresado otra palabra.
 ```
 
 ## Estructura del proyecto
 
 ```
-calculadora-basica-java/
-├── src/
-│   └── Calculadora.java
+JuegoAdivinanzas/
+├── src/juego/
+│   └── NewJFrame.java
 ├── README.md
 └── LICENSE
 ```
