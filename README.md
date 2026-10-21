@@ -35,7 +35,6 @@ java -jar Ahorcado.jar
 ```
 
 ## Ejemplo de uso
-```
 Usuario_1: Ingresa la palabra en la casilla
 correspondiente y hace click en el botón
 "iniciar" de la derehca.
@@ -55,7 +54,6 @@ de lo contrario si adivina, Gana.
 
 El proceso Juego se repite haciendo click en inciar
 cuando haya ingresado otra palabra.
-```
 
 ## Estructura del proyecto
 
@@ -69,8 +67,11 @@ JuegoAdivinanzas/
 
 ## Capturas de pantalla
 
+Ingreso de palabra e inicio del juego
 ![Ingreso de palabra e inicio del juego](images/image1.png)
+Mensaje "Ganaste" al adivinar la palabra
 ![Mensaje "Ganaste" al adivinar la palabra](images/image2.png)
+Mensaje de derrota, y nota de la palabra
 ![Mensaje de derrota, y nota de la palabra](images/image3.png)
 
 ## Autor
