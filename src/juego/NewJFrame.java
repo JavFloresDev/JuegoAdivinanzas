@@ -2,6 +2,7 @@
 package juego;
 
 import java.awt.Color;
+import javax.swing.JOptionPane;
 
 public class NewJFrame extends javax.swing.JFrame {
     
@@ -46,7 +47,7 @@ public class NewJFrame extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(530, 390));
+        setPreferredSize(new java.awt.Dimension(540, 453));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Adwaita Sans", 0, 18)); // NOI18N
@@ -62,52 +63,51 @@ public class NewJFrame extends javax.swing.JFrame {
         getContentPane().add(biniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 30, -1, -1));
 
         tguion.setFont(new java.awt.Font("Adwaita Sans", 0, 18)); // NOI18N
-        getContentPane().add(tguion, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 120, 30));
+        getContentPane().add(tguion, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 340, 30));
 
         jLabel2.setFont(new java.awt.Font("Adwaita Sans", 0, 18)); // NOI18N
-        jLabel2.setText("Ingrese letra");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 80, -1, -1));
+        jLabel2.setText("Ingrese letra a buscar");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Adwaita Sans", 0, 18)); // NOI18N
-        jLabel3.setText("a buscar");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 100, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, -1, -1));
 
         tletra.setFont(new java.awt.Font("Adwaita Sans", 0, 18)); // NOI18N
-        getContentPane().add(tletra, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 80, 40, 40));
+        getContentPane().add(tletra, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, 50, 40));
 
         baceptar.setFont(new java.awt.Font("Adwaita Sans", 0, 18)); // NOI18N
         baceptar.setText("BUSCAR");
         baceptar.addActionListener(this::baceptarActionPerformed);
-        getContentPane().add(baceptar, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 90, -1, -1));
+        getContentPane().add(baceptar, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Adwaita Sans", 0, 18)); // NOI18N
         jLabel4.setText("Intentos:");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, -1, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 160, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Adwaita Sans", 0, 18)); // NOI18N
         jLabel5.setText("Aciertos:");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 150, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 240, -1, -1));
 
         tintentos.setFont(new java.awt.Font("Adwaita Sans", 0, 18)); // NOI18N
-        getContentPane().add(tintentos, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 150, 40, -1));
+        getContentPane().add(tintentos, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 160, 40, -1));
 
         taciertos.setFont(new java.awt.Font("Adwaita Sans", 0, 18)); // NOI18N
-        getContentPane().add(taciertos, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 150, 40, -1));
-        getContentPane().add(t5, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 230, 60, 40));
-        getContentPane().add(t1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, 60, 40));
-        getContentPane().add(t2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 230, 60, 40));
-        getContentPane().add(t3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 230, 60, 40));
-        getContentPane().add(t4, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 230, 60, 40));
+        getContentPane().add(taciertos, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 240, 40, -1));
+        getContentPane().add(t5, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 330, 60, 40));
+        getContentPane().add(t1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 330, 60, 40));
+        getContentPane().add(t2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 330, 60, 40));
+        getContentPane().add(t3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 330, 60, 40));
+        getContentPane().add(t4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 330, 60, 40));
 
         jLabel6.setFont(new java.awt.Font("Adwaita Sans", 0, 18)); // NOI18N
         jLabel6.setText("fallos");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 150, -1, -1));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 200, -1, -1));
 
         tfallos.setFont(new java.awt.Font("Adwaita Sans", 0, 18)); // NOI18N
-        getContentPane().add(tfallos, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 150, 40, -1));
+        getContentPane().add(tfallos, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 200, 40, -1));
 
         jLabel7.setText("Progreso...");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 210, -1, -1));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 310, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -127,7 +127,7 @@ public class NewJFrame extends javax.swing.JFrame {
         matrizTexto=new String[longi];
         for (int i = 0; i < longi; i++) {
             matrizTexto[i]="-";
-            textoMostrado+=matrizTexto[i];
+            textoMostrado+=matrizTexto[i]+" ";
         }
         tintentos.setText(String.valueOf(intentos));
         tfallos.setText(String.valueOf(fallos));
@@ -143,6 +143,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void baceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_baceptarActionPerformed
         // TODO add your handling code here:
+        String palabra="";
         char letra;
         boolean resp=false;
         letraIngresada=tletra.getText();
@@ -154,15 +155,18 @@ public class NewJFrame extends javax.swing.JFrame {
                 matrizTexto[i]=String.valueOf(letra);
                 resp=true;
             }
-            textoMostrado+=matrizTexto[i];
+            textoMostrado+=matrizTexto[i]+" ";
         }
         if (resp==true) {
             aciertos++;
         }else{
             fallos++;
         }
-        if (textoMostrado.equals(textoIngresado)) {
-            textoMostrado="GANASTE";
+        for (int i = 0; i < longi; i++) {
+            palabra+=matrizTexto[i];
+        }
+        if (palabra.equals(textoIngresado)) {
+            JOptionPane.showMessageDialog(null, "GANASTE");
         }
         switch (fallos) {
             case 0:
@@ -181,7 +185,8 @@ public class NewJFrame extends javax.swing.JFrame {
                 break;
             default:
                 t5.setBackground(Color.RED);
-                textoMostrado="PERDISTE";
+                JOptionPane.showMessageDialog(null, "PERDISTE\nla palabra es: "+textoIngresado);
+                textoMostrado=textoIngresado;
                 break;
         }
         tletra.setText("");
