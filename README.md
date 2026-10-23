@@ -67,11 +67,11 @@ JuegoAdivinanzas/
 
 ## Capturas de pantalla
 
-Ingreso de palabra e inicio del juego
-![Ingreso de palabra e inicio del juego](images/image1.png)
-Mensaje "Ganaste" al adivinar la palabra
-![Mensaje "Ganaste" al adivinar la palabra](images/image2.png)
-Mensaje de derrota, y nota de la palabra
+Ingreso de palabra e inicio del juego\
+![Ingreso de palabra e inicio del juego](images/image1.png)\
+Mensaje "Ganaste" al adivinar la palabra\
+![Mensaje "Ganaste" al adivinar la palabra](images/image2.png)\
+Mensaje de derrota, y nota de la palabra\
 ![Mensaje de derrota, y nota de la palabra](images/image3.png)
 
 ## Autor
